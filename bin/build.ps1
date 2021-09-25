@@ -17,7 +17,7 @@ try {
 
     Copy-Item "target\$target\${module_name}.dll" "${module_renamed}.dll"
     $version = ((cargo pkgid) | Out-String).Trim().Split('#')[-1].Split(':')[-1]
-    Set-Content -Path "DYN-VERSION" -Value "${version}.1" -NoNewLine -Force
+    Set-Content -Path "DYN-VERSION" -Value "${version}" -NoNewLine -Force
     cask build
 } finally {
     Pop-Location

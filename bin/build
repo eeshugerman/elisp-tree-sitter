@@ -25,7 +25,7 @@ core_root="$PROJECT_ROOT/core"
 
     cp -f target/"$target/$MODULE_ORIGINAL" "$MODULE_RENAMED"
     version=$(cargo pkgid | cut -d'#' -f2 | cut -d: -f2)
-    echo "$version".1 | tr -d $'\n' > DYN-VERSION
+    echo "$version" | tr -d $'\n' > DYN-VERSION
     cask build
 )
 (

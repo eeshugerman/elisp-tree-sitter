@@ -6,6 +6,7 @@ on:
       - master
       - github-actions          # To test changes related to GitHub Actions.
       - ci                      # To test all CI changes.
+      - compilation-utilities
     paths-ignore:
       - '*.md'
       - doc/**

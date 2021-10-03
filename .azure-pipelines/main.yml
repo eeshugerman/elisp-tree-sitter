@@ -4,6 +4,7 @@ trigger:
     - master
     - ci
     - azure-pipelines
+    - compilation-utilities
   paths:
     exclude:
     - README.md

@@ -16,11 +16,13 @@ pr:
 
 strategy:
   matrix:
-    vs2017-win2016:
-      IMAGE_NAME: 'vs2017-win2016'
+    # XXX: Temporarily disabled due to outdated CA cert bundle. Maybe check
+    # https://docs.certifytheweb.com/docs/kb/kb-202109-letsencrypt/
+    # vs2017-win2016:
+    #   IMAGE_NAME: 'vs2017-win2016'
     # Sometimes fails.
-    # windows-2019:
-    #   IMAGE_NAME: 'windows-2019'
+    windows-2019:
+      IMAGE_NAME: 'windows-2019'
 
     # Sometimes fails: TLS issue against melpa.org and ftpmirror.gnu.org.
     # macos-10.14-emacs-25.3:
